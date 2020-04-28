@@ -81,4 +81,17 @@ void main(List<String> arguments) {
     si la condicion se cumple (si es true), haga lo que esta a la derecha del ?
     de lo contrario haga lo que esta a la derecha de : */
   //edad >= 18 ? print('Adulto') : print('Aun nino');
+
+  var ages = [33,15,27,40,22];
+  var avg;
+  var total = 0;
+  for (var age in ages) {
+    total += age;
+  }
+  avg = total/ages.length;
+  ages.sort();
+  print('Edades ordenadas  $ages');
+  print('La edad menor es: ${ages.first}');
+  print('La edad mayor es: ${ages.last}');
+  print('La edad promedio es: $avg');
 }
